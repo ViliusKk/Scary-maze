@@ -1,19 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Game : MonoBehaviour
 {
-    void Start()
-    {
-        
-    }
+    public string restartScene;
 
-    void Update()
+    void OnMouseOver()
     {
-        Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        pos.z = 0;
-
-        transform.position = pos;
+        SceneManager.LoadScene(restartScene);
     }
 }
