@@ -18,7 +18,6 @@ public class Button : MonoBehaviour
 
     void OnMouseDown()
     {
-        print("ok");
         transform.gameObject.SetActive(false);
         levels[0].SetActive(true);
         player.SetActive(true);
