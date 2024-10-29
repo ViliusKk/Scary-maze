@@ -2728,10 +2728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4374fe00fde64b3895add491a2d594c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levels:
-  - {fileID: 629707245}
-  - {fileID: 1452175242}
-  - {fileID: 1370677853}
+  firstLevel: {fileID: 629707245}
   player: {fileID: 1297165792}
 --- !u!61 &1290184012
 BoxCollider2D:
