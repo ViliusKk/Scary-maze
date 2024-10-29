@@ -4,22 +4,19 @@ using UnityEngine;
 
 public class Button : MonoBehaviour
 {
-    public List<GameObject> levels;
+    public GameObject firstLevel;
     public GameObject player;
 
     void Start()
     {
-        for (int i = 0; i < levels.Count; i++)
-        {
-            levels[i].SetActive(false);
-        }
+        firstLevel.SetActive(false);
         player.SetActive(false);
     }
 
     void OnMouseDown()
     {
         transform.gameObject.SetActive(false);
-        levels[0].SetActive(true);
+        firstLevel.SetActive(true);
         player.SetActive(true);
     }
 }
